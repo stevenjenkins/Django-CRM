@@ -13,9 +13,9 @@ This is a fork of [Django-CRM](https://github.com/MicroPyramid/Django-CRM), to d
 ## show_urls
 
 I find it convenient to be able to see the routes, and added support for the following:
-
+```
   python manage.py show_urls
-
+```
 
 # Installation Notes
 
