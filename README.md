@@ -56,7 +56,8 @@ sudo apt-get install postfix
 However, you also need to set up the following:
 1. Postgres db setup and configuration in `env.md`
 2. AWS S3 setup and configuration in `env.md`
-3. STATIC and MEDIA setup.  Note that `media/` is empty in the upstream release.
+3. STATIC and MEDIA setup.  Note that the `media` directory does not exist in the upstream
+  release, and the `crm/server_settings.py` sets that to the `/media` directory in your S3 bucket.
 4. Redis setup and configuration in `env.md` (if you are using Tasks -- otherwise not required)
 
 # Usage Notes
