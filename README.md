@@ -69,3 +69,26 @@ is not in the codebase.
 
 Navigate to <http://127.0.0.1:8000/swagger> to see the Swagger pages.
 
+## Authentication
+
+### Getting a token
+
+Using httpie (e.g., first `pip install httpie`):
+
+```
+http POST http://127.0.0.1:8000/api/auth/login/ email=<your email from registration> password=<password set at registration>
+
+```
+or navigate to <http://127.0.0.1:8000/api/auth/login>
+and provide the JSON like `{"email":"your email", "passord":"your password"}` and POST.
+
+Either of those methods will you give a token (in JSON) like the following):
+
+```
+{
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZW1haWwiOiJzdGV2ZW4uamVua2luc0BnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJoYXNfc2FsZXNfYWNjZXNzIjpmYWxzZSwiaGFzX21hcmtldGluZ19hY2Nlc3MiOmZhbHNlLCJmaWxlX3ByZXBlbmQiOiJ1c2Vycy9wcm9maWxlX3BpY3MiLCJ1c2VybmFtZSI6InN0ZXZlbiIsImZpcnN0X25hbWUiOiIiLCJsYXN0X25hbWUiOiIiLCJpc19hY3RpdmUiOnRydWUsImlzX2FkbWluIjp0cnVlLCJpc19zdGFmZiI6dHJ1ZX0.9Zw7_WJfqU_Q1IBs8BfpdKC-qggUHeGyv-cgX9JxC8Q",
+    "error": false
+}
+```
+
+
