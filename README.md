@@ -96,6 +96,8 @@ Use that token to authenticate, with an Authentication header set to that token 
 For example, via `curl`:
 ```
 $ curl  -H "Content-Type: application/json" -H "Authorization: jwt eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZW1haWwiOiJzdGV2ZW4uamVua2luc0BnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJoYXNfc2FsZXNfYWNjZXNzIjpmYWxzZSwiaGFzX21hcmtldGluZ19hY2Nlc3MiOmZhbHNlLCJmaWxlX3ByZXBlbmQiOiJ1c2Vycy9wcm9maWxlX3BpY3MiLCJ1c2VybmFtZSI6InN0ZXZlbiIsImZpcnN0X25hbWUiOiIiLCJsYXN0X25hbWUiOiIiLCJpc19hY3RpdmUiOnRydWUsImlzX2FkbWluIjp0cnVlLCJpc19zdGFmZiI6dHJ1ZX0.9Zw7_WJfqU_Q1IBs8BfpdKC-qggUHeGyv-cgX9JxC8Q" -X GET http://127.0.0.1:8000/api/users/
+
+
 {"per_page":10,"active_users":{"active_users_count":1,"next":null,"previous":null,"page_number":1,"active_users":[{"id":1,"file_prepend":"users/profile_pics","username":"steven","first_name":"","last_name":"","email":"steven.jenkins@gmail.com","is_active":true,"is_admin":true,"is_staff":true,"date_joined":"2021-09-07T05:02:44.091174+05:30","role":"ADMIN","profile_pic":null,"has_sales_access":false,"has_marketing_access":false}]},"inactive_users":{"inactive_users_count":0,"next":null,"previous":null,"page_number":1,"inactive_users":[]},"admin_email":"steven.jenkins@gmail.com","roles":[["ADMIN","ADMIN"],["USER","USER"]],"status":[["True","Active"],["False","In Active"]]}
 ```
 
