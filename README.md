@@ -67,3 +67,5 @@ However, you also need to set up the following:
 Note in `crm/urls.py` that there is swagger, and `api/` support; however, the UI of Django-CRM
 is not in the codebase.
 
+Navigate to <http://127.0.0.1:8000/swagger> to see the Swagger pages.
+
