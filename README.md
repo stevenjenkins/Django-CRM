@@ -1,5 +1,4 @@
-Django-CRM
-==========
+# Django-CRM
 
 This is a fork of [Django-CRM](https://github.com/MicroPyramid/Django-CRM), to do the following:
 
@@ -9,16 +8,16 @@ This is a fork of [Django-CRM](https://github.com/MicroPyramid/Django-CRM), to d
 
 <http://django-crm.readthedocs.io> for latest documentation
 
-Enhancements
-============
+# Enhancements
+
+## show_urls
 
 I find it convenient to be able to see the routes, and added support for the following:
 
   python manage.py show_urls
 
 
-Installation Notes
-==================
+# Installation Notes
 
 * SASS: the official documentation says to install ruby, ruby-dev, and gem.  However, you do
   not need that if you install SASS in another way (e.g., `npm install sass`)
