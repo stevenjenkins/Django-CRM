@@ -15,6 +15,8 @@ This is a fork of [Django-CRM](https://github.com/MicroPyramid/Django-CRM), to d
 * [ ] Detailed walkthrough of the `env.md`setup
 * [ ] Detailed description of the components needed (whether for stand-alone or Docker)
 * [ ] JWT conversion to supported JWT (or other token-management)
+* [ ] Consider removing the AWS S3 requirement and just using local STATIC and MEDIA for 
+simplicity
 
 # Enhancements
 
