@@ -18,8 +18,11 @@ This is a fork of [Django-CRM](https://github.com/MicroPyramid/Django-CRM), to d
 
 # Enhancements
 
-## admin/ support
+## `admin/` support
 
+Django Admin support has been enabled.  The upstream codebase had some support (e.g., the
+`*/admin.py` files), but those were not exposed.  My fork exposes those via the standard
+mechanisms.
 
 ## show_urls
 
