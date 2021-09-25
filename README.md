@@ -80,7 +80,7 @@ http POST http://127.0.0.1:8000/api/auth/login/ email=<your email from registrat
 
 ```
 or navigate to <http://127.0.0.1:8000/api/auth/login>
-and provide the JSON like `{"email":"your email", "passord":"your password"}` and POST.
+and provide the JSON like `{"email":"your email", "password":"your password"}` and POST.
 
 Either of those methods will you give a token (in JSON) like the following):
 
