@@ -10,13 +10,9 @@ This is a fork of [Django-CRM](https://github.com/MicroPyramid/Django-CRM), to d
 
 # TODOs
 
-* [ ] Fix and document token authentication
-* [ ] Enhance to use either session or token authentication for the `api/` namespace
+* [x] Document token authentication
 * [ ] Detailed walkthrough of the `env.md`setup
 * [ ] Detailed description of the components needed (whether for stand-alone or Docker)
-* [ ] JWT conversion to supported JWT (or other token-management)
-* [ ] Consider removing the AWS S3 requirement and just using local STATIC and MEDIA for 
-simplicity
 
 # Enhancements
 
@@ -101,4 +97,5 @@ $ curl  -H "Content-Type: application/json" -H "Authorization: jwt eyJ0eXAiOiJKV
 {"per_page":10,"active_users":{"active_users_count":1,"next":null,"previous":null,"page_number":1,"active_users":[{"id":1,"file_prepend":"users/profile_pics","username":"steven","first_name":"","last_name":"","email":"steven.jenkins@gmail.com","is_active":true,"is_admin":true,"is_staff":true,"date_joined":"2021-09-07T05:02:44.091174+05:30","role":"ADMIN","profile_pic":null,"has_sales_access":false,"has_marketing_access":false}]},"inactive_users":{"inactive_users_count":0,"next":null,"previous":null,"page_number":1,"inactive_users":[]},"admin_email":"steven.jenkins@gmail.com","roles":[["ADMIN","ADMIN"],["USER","USER"]],"status":[["True","Active"],["False","In Active"]]}
 ```
 
+At this point, you can use Swagger to further explore the CRM.
 
