@@ -40,6 +40,25 @@ I find it convenient to be able to see the routes, and added support for the fol
   `python manage.py createsuperuser` is enabled.
 
 
+## Minimum requirements
+
+The upstream install notes are the following:
+
+```
+sudo apt install postgresql xvfb libfontconfig wkhtmltopdf git libpq-dev python3-dev python3-pip gem ruby ruby-dev b
+uild-essential libssl-dev libffi-dev python3-venv redis-server redis-tools virtualenv -y
+
+sudo gem install sass
+
+sudo apt-get install postfix
+```
+
+However, you also need to set up the following:
+1. Postgres db setup and configuration in `env.md`
+2. AWS S3 setup and configuration in `env.md`
+3. STATIC and MEDIA setup.  Note that `media/` is empty in the upstream release.
+4. Redis setup and configuration in `env.md` (if you are using Tasks -- otherwise not required)
+
 # Usage Notes
 
 Note in `crm/urls.py` that there is swagger, and `api/` support; however, the UI of Django-CRM
