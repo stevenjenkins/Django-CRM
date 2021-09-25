@@ -24,7 +24,7 @@ simplicity
 
 Django Admin support has been enabled.  The upstream codebase had some support (e.g., the
 `*/admin.py` files), but those were not exposed.  My fork exposes those via the standard
-mechanisms.
+mechanisms (e.g., <http://localhost:8000/admin>).
 
 ## show_urls
 
