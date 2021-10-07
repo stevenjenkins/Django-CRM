@@ -1,0 +1,63 @@
+/api/accounts/	accounts.api_views.AccountsListView
+/api/accounts/<int:pk>/	accounts.api_views.AccountDetailView
+/api/accounts/<int:pk>/create_mail	accounts.api_views.AccountCreateMailView
+/api/accounts/attachment/<int:pk>/	accounts.api_views.AccountAttachmentView
+/api/accounts/comment/<int:pk>/	accounts.api_views.AccountCommentView
+/api/api-settings/	common.api_views.DomainList
+/api/api-settings/<int:pk>/	common.api_views.DomainDetailView
+/api/auth/activate-user/<str:uid>/<str:token>/<str:activation_key>/	common.api_views.ActivateUserView
+/api/auth/forgot-password/	common.api_views.ForgotPasswordView
+/api/auth/login/	common.api_views.LoginView
+/api/auth/register/	common.api_views.RegistrationView
+/api/auth/resend-activation-link/	common.api_views.ResendActivationLinkView
+/api/auth/reset-password/<str:uid>/<str:token>/	common.api_views.ResetPasswordView
+/api/cases/	cases.api_views.CaseListView
+/api/cases/<int:pk>/	cases.api_views.CaseDetailView
+/api/cases/attachment/<int:pk>/	cases.api_views.CaseAttachmentView
+/api/cases/comment/<int:pk>/	cases.api_views.CaseCommentView
+/api/contacts/	contacts.api_views.ContactsListView
+/api/contacts/<int:pk>/	contacts.api_views.ContactDetailView
+/api/contacts/attachment/<int:pk>/	contacts.api_views.ContactAttachmentView
+/api/contacts/comment/<int:pk>/	contacts.api_views.ContactCommentView
+/api/dashboard/	common.api_views.ApiHomeView
+/api/documents/	common.api_views.DocumentListView
+/api/documents/<int:pk>/	common.api_views.DocumentDetailView
+/api/events/	events.api_views.EventListView
+/api/events/<int:pk>/	events.api_views.EventDetailView
+/api/events/attachment/<int:pk>/	events.api_views.EventAttachmentView
+/api/events/comment/<int:pk>/	events.api_views.EventCommentView
+/api/leads/	leads.api_views.LeadListView
+/api/leads/<int:pk>/	leads.api_views.LeadDetailView
+/api/leads/attachment/<int:pk>/	leads.api_views.LeadAttachmentView
+/api/leads/comment/<int:pk>/	leads.api_views.LeadCommentView
+/api/leads/create-from-site/	leads.api_views.CreateLeadFromSite	common_urls:api_leads:create_lead_from_site
+/api/leads/upload/	leads.api_views.LeadUploadView
+/api/opportunities/	opportunity.api_views.OpportunityListView
+/api/opportunities/<int:pk>/	opportunity.api_views.OpportunityDetailView
+/api/opportunities/attachment/<int:pk>/	opportunity.api_views.OpportunityAttachmentView
+/api/opportunities/comment/<int:pk>/	opportunity.api_views.OpportunityCommentView
+/api/profile/	common.api_views.ProfileView
+/api/profile/change-password/	common.api_views.ChangePasswordView
+/api/tasks/	tasks.api_views.TaskListView
+/api/tasks/<int:pk>/	tasks.api_views.TaskDetailView
+/api/tasks/attachment/<int:pk>/	tasks.api_views.TaskAttachmentView
+/api/tasks/comment/<int:pk>/	tasks.api_views.TaskCommentView
+/api/teams/	teams.api_views.TeamsListView
+/api/teams/<int:pk>/	teams.api_views.TeamsDetailView
+/api/users/	common.api_views.UsersListView
+/api/users/<int:pk>/	common.api_views.UserDetailView
+/api/users/<int:pk>/status/	common.api_views.UserStatusView
+/api/users/get-teams-and-users/	common.api_views.GetTeamsAndUsersView
+/login/	django.contrib.auth.views.LoginView	login
+/logout/	django.contrib.auth.views.LogoutView	logout
+/logout/	django.contrib.auth.views.LogoutView	logout
+/media/<path>	django.views.static.serve
+/password_change/	django.contrib.auth.views.PasswordChangeView	password_change
+/password_change/done/	django.contrib.auth.views.PasswordChangeDoneView	password_change_done
+/password_reset/	django.contrib.auth.views.PasswordResetView	password_reset
+/password_reset/done/	django.contrib.auth.views.PasswordResetDoneView	password_reset_done
+/redoc/	drf_yasg.views.SchemaView	schema-redoc
+/reset/<uidb64>/<token>/	django.contrib.auth.views.PasswordResetConfirmView	password_reset_confirm
+/reset/done/	django.contrib.auth.views.PasswordResetCompleteView	password_reset_complete
+/swagger/	drf_yasg.views.SchemaView	schema-swagger-ui
+/swagger<format>	drf_yasg.views.SchemaView	schema-json
